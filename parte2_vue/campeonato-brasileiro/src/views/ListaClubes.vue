@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <h2 class="text-h5 text-center mb-3 mt-5">Tabela de classificação</h2>
-    <TabelaClubes :clubes="listaClubes"/>
+    <TabelaClubes :clubes="clubesOrdenados"/>
   </v-container>
 </template>
 
@@ -24,6 +24,15 @@ export default {
         this.listaClubes = json;
       });
   },
+
+  computed: {
+    clubesOrdenados() {
+      const listaComputada = this.listaClubes.slice(0).sort((a, b) => a.pontos > b.pontos ? -1 : 1);
+      return listaComputada;
+    }
+  }
+
+
 };
 </script>
 
