@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+#blueBar {
+    width: 100vw;
+    height: 10vh;
+    background-color: #3d54b5;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+span { 
+    margin: 0;
+    margin-left: 20%;
+    font-size: 160%;
+    color: #fff;
+}
+
+img {
+    max-width: 95%;
+    margin-bottom: 5px;
+}
+
+#info {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#infoLeft {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+#infoRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+span.info {
+    color: black;
+    margin: 0;
+    font-size: larger;
+}

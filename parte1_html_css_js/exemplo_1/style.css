@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+
+div {
+    text-align: center;
+    margin: 0;
+}
+
+div#box1 {
+    background: red;
+    height: 25vh;
+}
+div#box2 {
+    background: orange;
+    height: 25vh;
+}
+div#box3 {
+    background: yellow;
+    height: 25vh;
+}
