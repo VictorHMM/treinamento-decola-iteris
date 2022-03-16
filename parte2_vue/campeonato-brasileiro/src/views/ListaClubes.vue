@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h2 class="text-h5 text-center mb-3 mt-5">Tabela de classificação</h2>
+    <h2 class="text-h5 text-center mb-3 mt-5">Texto</h2>
     <TabelaClubes :clubes="clubesOrdenados"/>
   </v-container>
 </template>
@@ -10,7 +10,7 @@ import TabelaClubes from '../components/TabelaClubes.vue'
 export default {
   name: 'ListaClubes',
   components: {
-    Tabela
+    TabelaClubes
   },
   data() {
     return {
