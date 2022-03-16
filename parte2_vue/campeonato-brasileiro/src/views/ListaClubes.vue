@@ -10,7 +10,7 @@ import TabelaClubes from '../components/TabelaClubes.vue'
 export default {
   name: 'ListaClubes',
   components: {
-    TabelaClubes
+    Tabela
   },
   data() {
     return {
