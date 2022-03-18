@@ -1,21 +1,28 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import CountriesView from '../views/CountriesView.vue'
-import CountryInfoView from '../views/CountryInfoView'
+import SortedName from '../views/SortedName.vue'
+import SortedCapital from '../views/SortedCapital.vue'
+import SortedPopulation from '../views/SortedPopulation.vue'
+
 
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/countriesList',
-    name: 'Countries',
-    component: CountriesView
+    path: '/',
+    name: 'Name',
+    component: SortedName
   },
   {
-    path: '/countryInfo',
-    name: 'Info',
-    component: CountryInfoView
+    path: '/sortedByCapital',
+    name: 'Capital',
+    component: SortedCapital
+  },
+  {
+    path: '/sortedByPopulation',
+    name: 'Population',
+    component: SortedPopulation
   },
 ]
 

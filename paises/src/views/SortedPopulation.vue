@@ -8,7 +8,7 @@
 <script>
 import CountriesList from '../components/CountriesList.vue';
 export default {
-    name: 'CountriesListView',
+    name: 'SortedPopulation',
     components: {
         CountriesList,
     },
@@ -25,7 +25,7 @@ export default {
     computed: {
         sortCountries() {
             const sortedCountriesArray = this.countriesArray.slice(0)
-            .sort((a, b) => a.name.common.localeCompare(b.name.common));
+            .sort((a, b) => a.population > b.population ? -1 : 1);
             return sortedCountriesArray;
         }
     }
@@ -33,5 +33,7 @@ export default {
 </script>
 
 <style scoped>
-
+.text-h5 {
+    color: #fff;
+}
 </style>
