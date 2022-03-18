@@ -4,7 +4,7 @@
       color="#fcb69f"
       dark
       shrink-on-scroll
-      src="../../../public/map.png"
+      src="../../assets/map.png"
       scroll-target="#scrolling-techniques-2"
     >
       <v-app-bar-nav-icon color="black"></v-app-bar-nav-icon>
@@ -15,10 +15,6 @@
 
       <v-btn icon>
         <v-icon color="black">mdi-magnify</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon color="black">mdi-heart</v-icon>
       </v-btn>
 
       <v-btn icon>
