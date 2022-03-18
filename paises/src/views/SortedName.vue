@@ -8,7 +8,7 @@
 <script>
 import CountriesList from '../components/CountriesList.vue';
 export default {
-    name: 'CountriesListView',
+    name: 'SortedName',
     components: {
         CountriesList,
     },
@@ -33,5 +33,7 @@ export default {
 </script>
 
 <style scoped>
-
+.text-h5 {
+    color: #fff;
+}
 </style>
