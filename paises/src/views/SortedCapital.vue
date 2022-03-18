@@ -25,6 +25,10 @@ export default {
     computed: {
         sortCountries() {
             const sortedCountriesArray = this.countriesArray.slice(0)
+            .filter((country) => country.name.common.localeCompare("Antarctica") !== 0)
+            .filter((country) => country.name.common.localeCompare("Bouvet Island") !== 0)
+            .filter((country) => country.name.common.localeCompare("Macau") !== 0)
+            .filter((country) => country.name.common.localeCompare("Heard Island and McDonald Islands") !== 0)
             .sort((a, b) => a.capital[0].localeCompare(b.capital[0]));
             return sortedCountriesArray;
         }
@@ -32,3 +36,8 @@ export default {
 }
 </script>
 
+<style scoped>
+.text-h5 {
+    color: #fff;
+}
+</style>

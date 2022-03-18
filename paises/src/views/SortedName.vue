@@ -33,5 +33,7 @@ export default {
 </script>
 
 <style scoped>
-
+.text-h5 {
+    color: #fff;
+}
 </style>
