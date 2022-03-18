@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <h2 class="text-h5 text-center mb-3 mt-5">Countries</h2>
-        <CountriesList :countries="countriesArray"/>
+        <CountriesList :countries="sortCountries"/>
     </v-container>
 </template>
 
@@ -21,7 +21,13 @@ export default {
         fetch('https://restcountries.com/v3.1/all')
             .then(response => response.json())
             .then((json) => {this.countriesArray = json})
-            console.log(this.countriesArray)
+    },
+    computed: {
+        sortCountries() {
+            const sortedCountriesArray = this.countriesArray.slice(0)
+            .sort((a, b) => a.name.common.localeCompare(b.name.common));
+            return sortedCountriesArray;
+        }
     }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app id="main">
     <AppTopBar/>
       <v-main>
         <CountriesView/>
@@ -24,3 +24,13 @@ export default {
   }),
 };
 </script>
+
+<style>
+#main {
+    background-image: url("./assets/wallpaper.jpg");
+    background-repeat: repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+</style>
